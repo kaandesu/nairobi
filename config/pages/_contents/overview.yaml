@@ -1,0 +1,88 @@
+# pnpm generate:content:pages
+# config/pages/_contents/overview.yaml
+page:
+    href: '/dashboard/overview'
+    snippets:
+        tabs-expose-datepicker-download:
+
+layout:
+    gap: 2
+    justify: 'end'
+    items: 'center'
+    grid:
+        small: 'grid-rows-8 grid-cols-2'
+        medium: 'md:grid-rows-3 md:grid-cols-3'
+        large: 'lg:grid-rows-2 lg:grid-cols-4'
+
+children:
+    - component: 'BasicCard'
+      props:
+          title: 'New Users'
+          value: '1,982'
+          muted: '+14.7% from last week'
+          icon: 'mdi:account-plus'
+      class: 'h-full'
+
+    - component: 'BasicCard'
+      props:
+          title: 'Daily Active Users'
+          value: '12,350'
+          muted: '+9.2% from yesterday'
+          icon: 'mdi:account-group'
+      class: 'h-full'
+
+    - component: 'BasicCard'
+      props:
+          title: 'Total Products Sold'
+          value: '8,721'
+          muted: '+11.5% from last quarter'
+          icon: 'mdi:cart'
+      class: 'h-full'
+
+    - component: 'BasicCard'
+      props:
+          title: 'Customer Satisfaction'
+          value: '92%'
+          muted: '+3.4% from last month'
+          icon: 'mdi:emoticon-happy'
+      class: 'h-full'
+
+    - component: 'BasicCard'
+      props:
+          title: 'Pending Orders'
+          value: '439'
+          muted: '-5.1% from last week'
+          icon: 'mdi:clock-alert'
+      class: 'h-full'
+
+    - component: 'BasicCard'
+      props:
+          title: 'Refund Requests'
+          value: '78'
+          muted: '+2.9% from last month'
+          icon: 'mdi:cash-refund'
+      class: 'h-full'
+
+    - component: 'BasicCard'
+      props:
+          title: 'Bounce Rate'
+          value: '38%'
+          muted: '-1.2% from last week'
+          icon: 'mdi:arrow-u-down-left'
+      class: 'h-full'
+
+    - component: 'BasicCard'
+      props:
+          title: 'Tickets Resolved'
+          value: '521'
+          muted: '+17.6% from last month'
+          icon: 'mdi:check-circle'
+      class: 'h-full'
+
+    - component: 'BasicCard'
+      props:
+          title: 'Avg. Session Duration'
+          value: '5m 43s'
+          muted: '+15 seconds from last week'
+          icon: 'mdi:timer'
+      class: 'h-full'

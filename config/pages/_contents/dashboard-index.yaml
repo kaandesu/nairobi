@@ -1,0 +1,102 @@
+# pnpm generate:content:pages
+# config/pages/_contents/overview.yaml
+page:
+    href: '/dashboard/index'
+    snippets:
+        mock-chart-datas:
+        tabs-expose-datepicker-download:
+
+layout:
+    gap: 2
+    justify: 'end'
+    items: 'center'
+    grid:
+        small: 'grid-rows-8 grid-cols-2'
+        medium: 'md:grid-rows-3 md:grid-cols-3'
+        large: 'lg:grid-rows-2 lg:grid-cols-4'
+    slots:
+        2:
+            colSpan: 2
+            rowSpan: 2
+        3:
+            colSpan: 2
+
+children:
+    - component: 'BasicCard'
+      class: 'h-full'
+      props:
+          title: 'Total Revenue'
+          value: '$45,231.89'
+          muted: '+20.1% from last month'
+          icon: 'material-symbols-light:attach-money-rounded'
+
+    - component: 'BasicCard'
+      class: 'h-full'
+      props:
+          title: 'Subscriptions'
+          value: '+2350'
+          muted: '+180.1% from last month'
+          icon: 'formkit:people'
+
+    - component: 'CustomBarChartCard'
+      props:
+          title: 'Downloads'
+          desc: 'Last 30 days'
+          datas:
+          options: [['Desktop', '12,345'], ['Mobile', '56,789']]
+
+    - component: 'BasicCard'
+      class: 'h-32'
+      props:
+          title: 'Orders Processed'
+          value: '3,214'
+          muted: '+6.5% from last month'
+          icon: 'fluent:box-20-filled'
+
+    - component: 'BasicCard'
+      class: 'h-32'
+      props:
+          title: 'Sales'
+          value: '+12,234'
+          muted: '+19% from last month'
+          icon: 'iconamoon:credit-card-thin'
+
+    - component: 'BasicCard'
+      class: 'h-full'
+      props:
+          title: 'Active Now'
+          value: '+573'
+          muted: '+201 since last hour'
+          icon: 'majesticons:status-online-line'
+
+    - component: 'BasicCard'
+      class: 'h-32'
+      props:
+          title: 'Ad Clicks'
+          value: '9,876'
+          muted: '+22.7% from last month'
+          icon: 'mdi:mouse'
+
+    - component: 'BasicCard'
+      class: 'h-32'
+      props:
+          title: 'Conversion Rate'
+          value: '5.2%'
+          muted: '+0.9% from last month'
+          icon: 'mdi:chart-pie'
+
+    - component: 'BasicCard'
+      class: 'h-32'
+      props:
+          title: 'Support Tickets'
+          value: '289'
+          muted: '-4.8% from last month'
+          icon: 'mdi:lifebuoy'
+
+    - component: 'BasicCard'
+      class: 'h-32'
+      props:
+          title: 'Retention'
+          value: '78%'
+          muted: '+2.1% from last month'
+          icon: 'mdi:account-heart'

@@ -1,0 +1,13 @@
+defineExpose({
+	showDatePicker: true,
+	showDownloadButton: true,
+	onDownload: () => {
+		createToast({
+			message: 'Download started!',
+			toastOps: {
+				description: 'Downloading...',
+			},
+			type: 'info',
+		})()
+	},
+})

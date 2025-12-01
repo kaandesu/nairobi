@@ -1,0 +1,41 @@
+<template>
+	<div>
+		<NuxtLayout name="dashboard-tabs">
+			<NuxtPage ref="page" :dateValue="dateValue" />
+			<template v-if="page && page.pageRef" #bar>
+				<DateRangePicker
+					v-if="page.pageRef.showDatePicker"
+					v-model="dateValue"
+				/>
+				<Button
+					v-if="page.pageRef.showDownloadButton"
+					@click="page.pageRef.onDownload"
+					class="h-5 justify-start text-left"
+					variant="secondary"
+				>
+					<label class="pointer-events-none hidden md:inline-block">
+						Download
+					</label>
+					<Icon
+						name="material-symbols:download-2-outline-rounded"
+						class="pointer-events-none ml-0 h-6 w-6 md:ml-2 md:h-4 md:w-4"
+					/>
+				</Button>
+			</template>
+		</NuxtLayout>
+	</div>
+</template>
+
+<script setup lang="ts">
+/* generate:snippets */
+import type { DateRange } from 'radix-vue'
+const page = ref<{ pageRef: null | any | undefined }>()
+const dateValue = ref<DateRange>({
+	start: undefined,
+	end: undefined,
+})
+
+definePageMeta({
+	layout: '<%= layout %>',
+})
+</script>
