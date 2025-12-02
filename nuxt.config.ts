@@ -54,6 +54,10 @@ export default defineNuxtConfig({
 			exclude: ['vee-validate'],
 		},
 	},
+	devServer: {
+		port: 3839,
+		host: '0.0.0.0',
+	},
 	app: {
 		baseURL: '',
 		pageTransition: { name: 'page', mode: 'out-in' },
