@@ -19,6 +19,8 @@ const {
 
 import { useAppStateStore } from '@/stores/app-state'
 const { theme } = storeToRefs(useAppStateStore())
+
+onBeforeMount(async () => await navigateTo('/company'))
 </script>
 <template>
 	<main

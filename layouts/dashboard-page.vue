@@ -3,6 +3,7 @@
 		class="grid-bg flex h-screen w-screen flex-col pt-16 dark:bg-background md:flex-row md:pt-0"
 	>
 		<sidebar2
+			v-if="false"
 			v-model:collapsed="navState.collapsed"
 			v-model:open="navState.open"
 		/>

@@ -11,8 +11,8 @@ import { useAppStateStore } from '@/stores/app-state'
 const app = useAppStateStore()
 const { updateActivePage } = app
 const { theme } = storeToRefs(app)
-const route = useRoute()
 
+const route = useRoute()
 onMounted(() => {
 	app.changeTheme(theme.value)
 	updateActivePage(route.name)
