@@ -43,7 +43,6 @@
 			</Badge>
 			<div class="size-4" v-else />
 		</div>
-
 		<!-- Input Area -->
 		<form @submit.prevent="sendMessage" class="flex gap-2">
 			<input
