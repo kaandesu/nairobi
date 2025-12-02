@@ -36,7 +36,7 @@ export const useAppStateStore = defineStore(
 
 		const loadingPage = ref<boolean>(false)
 
-		const theme = ref<Theme>('blue')
+		const theme = ref<Theme>('violet')
 		const changeTheme = (t: Theme) => {
 			theme.value = t
 		}

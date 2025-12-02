@@ -25,22 +25,14 @@ export const useConfigStore = defineStore(
 		// the pages are meant to be on the sidebar
 		// should be generated
 		const sidebar = ref<DashboardConfig>({
-			title: 'Kaan Dashboard',
-			desc: 'Modular Dashboard',
+			title: 'Nairobi',
+			desc: 'Handover things and shit',
 			logo: 'https://avatar.vercel.sh/0.svg',
 			logoFallback: 'K',
 			pages: [
+				p.YourCompany.value,
 				p.Dashboard.value,
-				p.Tasks.value,
-				p.Chats.value,
-				p.Apps.value,
 				p.Authentication.value,
-				p.Users.value,
-				p.Requests.value,
-				p.Analysis.value,
-				p.ExtraComponents.value,
-				p.ErrorPages.value,
-				p.Tour.value,
 				p.Settings.value,
 			],
 		})

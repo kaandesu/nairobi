@@ -11,7 +11,7 @@ export const hero = {
           `,
 	button: {
 		primary: {
-			link: '/sign-in',
+			link: '/auth/sign-in',
 			label: 'Get Started',
 		},
 		secondary: {

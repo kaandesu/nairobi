@@ -58,7 +58,7 @@
 	</main>
 </template>
 <script setup lang="ts">
-import { useConfigStore } from '../stores/config'
+import { useConfigStore } from '@/stores/config'
 import { useAppStateStore } from '../stores/app-state'
 
 const { currentPageInfo } = storeToRefs(useAppStateStore())

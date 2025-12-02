@@ -32,6 +32,7 @@ export type Page = {
 	title?: string
 	uid: string
 	label?: string
+	hideTitle?: boolean
 	href?: string
 	icon?: string
 	isCollapsed?: boolean

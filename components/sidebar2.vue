@@ -14,8 +14,8 @@
 					:class="['flex items-center', !isCollapsed ? 'gap-2' : '']"
 				>
 					<Avatar
-						class="rounded-md bg-white p-2 transition-all"
-						:class="isCollapsed ? '-ml-2 h-6 w-6 p-2' : 'h-8 w-8'"
+						class="transition-all"
+						:class="isCollapsed ? '-ml-2 h-6 w-6 p-2' : 'h-9 w-9'"
 					>
 						<AvatarImage
 							v-if="config.sidebar.logo"
@@ -110,7 +110,7 @@
 <script setup lang="ts">
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { useConfigStore } from '../stores/config'
+import { useConfigStore } from '@/stores/config'
 import { tours } from '~/config/tours'
 
 const drawerOpen = ref<boolean>(false)

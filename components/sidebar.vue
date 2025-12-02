@@ -112,7 +112,7 @@
 <script setup lang="ts">
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { useConfigStore } from '../stores/config'
+import { useConfigStore } from '@/stores/config'
 import { tours } from '~/config/tours'
 
 const drawerOpen = ref<boolean>(false)

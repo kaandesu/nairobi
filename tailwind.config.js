@@ -59,6 +59,34 @@ export default {
 					foreground: 'hsl(var(--card-foreground))',
 				},
 			},
+			boxShadow: {
+				// Base versions
+				liquid: 'inset 2px 2px 0px -2px hsl(var(--primary) / 0.7), inset 0 0 10px 1px hsl(var(--primary) / 0.7)',
+				'liquid-destructive':
+					'inset 2px 2px 0px -2px hsl(var(--destructive) / 0.7), inset 0 0 10px 1px hsl(var(--destructive) / 0.7)',
+				'liquid-positive':
+					'inset 2px 2px 0px -2px #22c55eaa, inset 0 0 10px 1px #22c55eaa',
+				'liquid-info':
+					'inset 2px 2px 0px -2px #3b82f6aa, inset 0 0 10px 1px #3b82f6aa',
+				'liquid-warning':
+					'inset 2px 2px 0px -2px #eab308aa, inset 0 0 10px 1px #eab308aa',
+				'liquid-dark':
+					'inset 2px 2px 0px -2px rgba(255, 255, 255, 0.7), inset 0 0 10px 1px rgba(255, 255, 255, 0.7)',
+
+				// Selected versions (stronger glow)
+				'liquid-selected':
+					'inset 2px 2px 0px -2px hsl(var(--primary) / 0.7), inset 0 0 20px 10px hsl(var(--primary) / 0.7)',
+				'liquid-destructive-selected':
+					'inset 2px 2px 0px -2px hsl(var(--destructive) / 0.7), inset 0 0 20px 10px hsl(var(--destructive) / 0.7)',
+				'liquid-positive-selected':
+					'inset 2px 2px 0px -2px #22c55eaa, inset 0 0 20px 10px #22c55eaa',
+				'liquid-info-selected':
+					'inset 2px 2px 0px -2px #3b82f6aa, inset 0 0 20px 10px #3b82f6aa',
+				'liquid-warning-selected':
+					'inset 2px 2px 0px -2px #eab308aa, inset 0 0 20px 10px #eab308aa',
+				'liquid-dark-selected':
+					'inset 2px 2px 0px -2px rgba(255, 255, 255, 0.7), inset 0 0 20px 10px rgba(255, 255, 255, 0.7)',
+			},
 			borderRadius: {
 				xl: 'calc(var(--radius) + 4px)',
 				lg: 'var(--radius)',

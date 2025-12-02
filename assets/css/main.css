@@ -18,3 +18,45 @@ body {
 *::after {
 	box-sizing: content-box;
 }
+
+.grid-bg {
+	/* Tweak these to taste */
+	--grid-size: 160px; /* distance between lines */
+	--grid-line: 1px; /* line thickness */
+	--grid-color: rgba(185, 0, 185, 0.1);
+	--grid-glow: rgba(185, 0, 185, 0.1);
+	position: relative;
+	background-color: transparent;
+
+	/* Two orthogonal repeating grids + a soft radial glow */
+	background-image: repeating-linear-gradient(
+			0deg,
+			var(--grid-color) 0,
+			var(--grid-color) var(--grid-line),
+			transparent var(--grid-line),
+			transparent var(--grid-size)
+		),
+		repeating-linear-gradient(
+			90deg,
+			var(--grid-color) 0,
+			var(--grid-color) var(--grid-line),
+			transparent var(--grid-line),
+			transparent var(--grid-size)
+		),
+		radial-gradient(circle at 50% 40%, var(--grid-glow), transparent 60%);
+	background-size: auto, auto, cover;
+	background-repeat: repeat, repeat, no-repeat;
+
+	/* Ensure the grid scrolls with each section (not fixed) */
+	background-attachment: scroll, scroll, scroll;
+}
+
+/* Slightly stronger in dark mode (your app sets .dark on the root/theme) */
+.dark .grid-bg {
+	--grid-color: rgba(117, 90, 166, 0.2);
+	--grid-glow: rgba(117, 80, 166, 0);
+}
+
+.blur2 {
+	backdrop-filter: blur(2px);
+}
