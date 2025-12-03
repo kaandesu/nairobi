@@ -1,6 +1,6 @@
 <template>
 	<Card
-		class="blur2 w-full max-w-sm cursor-pointer select-none bg-transparent text-primary shadow-liquid transition-all hover:shadow-liquid-selected dark:text-white dark:shadow-liquid-dark hover:dark:shadow-liquid-dark-selected"
+		class="blur2 w-full max-w-sm cursor-pointer select-none border-none bg-transparent text-primary shadow-md transition-all hover:shadow-lg dark:text-white dark:shadow-liquid-dark"
 		@click="navigateTo('/company')"
 	>
 		<CardHeader class="relative">

@@ -76,52 +76,52 @@ export const useApiStore = defineStore(
 		const products = ref<Product[]>([
 			{
 				id: 1,
-				name: 'Aurora Stream',
+				name: 'Weno Handover AI',
 				description:
-					'Its a high-performance distributed SQL database optimized for scalable analytics workloads.',
-				client: 'Amazon',
+					'AI-powered handover assistant that automates knowledge transfer between teams and systems.',
+				client: 'Acme Corp',
 			},
 			{
 				id: 2,
-				name: 'LambdaForge',
+				name: 'Weno CloudSync',
 				description:
-					'Serverless function execution platform with millisecond cold starts and automated scaling.',
-				client: 'Amazon',
+					'Secure cloud synchronization platform for seamless data sharing across distributed teams.',
+				client: 'Globex Inc',
 			},
 			{
 				id: 3,
-				name: 'S3 Glacier Edge',
+				name: 'Weno FrontForge',
 				description:
-					'Low-cost, edge-optimized archival storage for long-term data retention.',
-				client: 'Amazon',
+					'Frontend component library and framework optimized for enterprise-grade applications.',
+				client: 'Initech',
 			},
 			{
 				id: 4,
-				name: 'CloudWeave CDN',
+				name: 'Weno DataVault',
 				description:
-					'Global content delivery network with intelligent routing and edge compute capabilities.',
-				client: 'Amazon',
+					'Backend data management solution with automated indexing, analytics, and secure storage.',
+				client: 'Umbrella Corp',
 			},
 			{
 				id: 5,
-				name: 'Kinesis Pulse',
+				name: 'Weno FlowOps',
 				description:
-					'Real-time event streaming and ingestion service with built-in data transformation.',
-				client: 'Amazon',
+					'AI-driven workflow automation engine to orchestrate business processes efficiently.',
+				client: 'Stark Industries',
 			},
 			{
 				id: 6,
-				name: 'Neptune GraphX',
+				name: 'Weno EdgeCompute',
 				description:
-					'Managed graph database for relationship-centric queries with high-speed traversal.',
-				client: 'Amazon',
+					'Cloud-edge platform to run real-time computations closer to your users with minimal latency.',
+				client: 'Wayne Enterprises',
 			},
 			{
 				id: 7,
-				name: 'ElasticForge Search',
+				name: 'Weno InsightHub',
 				description:
-					'Scalable search and indexing engine for large-volume structured and unstructured data.',
-				client: 'Amazon',
+					'Unified analytics dashboard providing actionable insights across all Weno products.',
+				client: 'Soylent Corp',
 			},
 		])
 
